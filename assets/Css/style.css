@@ -1,0 +1,782 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@font-face{
+    font-family: 'myfont';
+    /* src: url('/assets/Fonts/EduSAHand-VariableFont_wght.ttf'); */
+    src: url('/assets/Fonts/PlayfairDisplay-VariableFont_wght.ttf');    
+}
+/* navbar */
+header{
+    background-color: #22b3c1;
+    display: flex;
+    padding: 20px 10%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+header a{
+    color: white;
+    font-family: 'myfont';
+    padding: 10px 30px;
+}
+header a:hover{
+    color: rgb(219, 219, 219);
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+.active::before{
+    content: 'ZAS';
+    position: absolute;
+    border-top: 2px solid white;
+    color: transparent;
+}
+/* navbar */
+/* -------------------------------------------------------- */
+/* main */
+section.slider{
+    height: 700px;
+    font-family: 'myfont';
+}
+section.slider article {
+    padding: 10% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section.slider article:first-child{
+    background-image: url('/assets/Image/banner-01.jpg');
+    height: inherit;
+    background-size: cover;
+    text-align: center;
+}
+section.slider article aside:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+section.slider article aside:first-child p{
+    font-size: 24px;
+    color: white;
+}
+section.slider article aside:first-child h2{
+    font-size: 48px;
+    color: white;
+}
+section.slider article aside:first-child a{
+    width: fit-content;
+    padding: 12px 30px;
+    color: #22b2c0;
+    border: 1px solid #22b2c0;
+    font-size: 18px;
+    border-radius: 30px;
+}
+section.slider article aside:first-child a:hover{
+    background-color: #22b2c0;
+    color: white;
+    transition: all .5s;
+}
+section.slider article aside:nth-child(2){
+    background-color: white;
+    border-radius: 80px;
+    padding: 30px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+section.slider article  aside:nth-child(2) div.slider-box4{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+section.slider article aside:nth-child(2) div{
+    display: flex;
+    gap: 15px;
+}
+section.slider article aside:nth-child(2) div p:first-child{
+    border: 1px solid #22b2c0;
+    color: #22b2c0;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.slider article  aside:nth-child(2) div p:last-child{
+    flex-grow: 1;
+    text-align: left;
+    display: grid;
+    color: gray;
+    font-size: 20px;
+}
+section.slider article aside:nth-child(2) div p:last-child span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section.slider article aside:nth-child(2) div p:last-child span b{
+    color: #22b2c0;
+}
+section.slider article  aside:nth-child(2) div.slider-box4 a{
+    background-color: #22b2c0;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    align-items: center;
+}
+section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
+    background-color: #50ccd7;
+}
+/* -------------------------------------------------------- */
+.visit{
+    background-color: #232223;
+    padding: 10%;
+}
+.visit main:first-child{
+    width: 35%;
+    margin-bottom: 50px;
+   font-family: 'myfont'; 
+}
+.visit main:first-child h2{
+    color: #1d1c1d;
+    font-size: 30px;
+}
+.visit main:first-child p{
+    color: #585858;
+    font-size: 18px;
+}
+.visit main:last-child{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+.visit aside .box1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    border-bottom: 1px solid #585858;
+    padding: 30px 0px;
+    font-family: 'myfont';
+}
+.visit aside .box1:last-child{
+    border-bottom: none;
+}
+.visit aside .box1 section:first-child img{
+    width: 100%;
+    border-radius: 20px;
+}
+.visit aside .box1 article:nth-child(2){
+    border-bottom: 1px solid #585858;
+    padding: 20px 0px;
+    font-size: 20px;
+    color: #585858;
+}
+.visit aside .box1 section:nth-child(4){
+    padding: 20px 0px;
+}
+.visit aside .box1 section:nth-child(4) a{
+    color: #22b2c0;
+    font-size: 20px;
+}
+.visit aside .box1 article:nth-child(3){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    padding: 15px 0px;
+    border-bottom: 1px solid #585858;
+}
+.visit aside .box1 article:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+.visit aside .box1 article:nth-child(1) span{
+    display: grid;
+    color: #585858;
+}
+.visit aside .box1 article:nth-child(1) a{
+    background-color: #22b2c0;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+/* -------------------------------------------------------- */
+/* end of main */
+/* -------------------------------------------------------- */
+/* footer */
+.foot-1{
+    background-color: #14d6e771;
+    background-image: url('/assets/Image/banner-01.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+    background-position: 0% 65%;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'myfont';
+}
+.foot-1 h2{
+    font-size: 50px;
+}
+.foot-1 h3{
+    font-size: 25px;
+}
+.foot-1 button{
+    padding: 20px 30px;
+    border-radius: 40px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+}
+.foot-1 button:hover{
+    background-color: white;
+    color: #22b3c1;
+}
+.foot-2{
+    background-color: #22b3c1;
+}
+.foot-2{
+    background-color: #22b2c0;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-family: 'myfony';
+    color: white;
+}
+.foot-2 a{
+    color: white;
+}
+.foot-2 a:hover{
+    color: rgb(219, 219, 219);
+}
+/* footer */
+/* ---------------ABOUT------------------ */
+.about-main{
+    width: 90%;
+    height: 100vh;
+    margin: 10% auto;
+    position: relative;
+    color: white;
+    font-family: 'myfont';
+}
+.blur{
+    filter: blur(8px) brightness(80%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(152, 148, 148, 0.641);
+}
+.about-content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 8% 16%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.about-content h2 .line{
+    height: 2px;
+    width: 40%;
+    background-color: gray;
+    margin: 15px auto;
+}
+.about-content a{
+    background-color: white;
+    color: #22b2c0;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+/* ------------------------------------- */
+.cities-Towns{
+    padding: 8% 10%;
+    background-color: #1d1c1d;
+    font-family: 'myfont';
+}
+.cities-Towns section:first-child{
+    background-color: white;
+    padding: 50px;
+    border-radius: 25px;
+    position: relative;
+    top: -170px;
+}
+.cities-Towns section:first-child h2{
+    color: #232223;
+    font-size: 36px;
+}
+.cities-Towns section:first-child h2 span{
+    color: #22b2c0;
+}
+.cities-Towns section:first-child div.part{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.cities-Towns section:first-child article{
+    border-radius: 25px;
+    position: relative;
+}
+.cities-Towns section:first-child div.part article img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.cities-Towns section:first-child div.part article h3{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+.cities-Towns section:nth-child(2){
+    text-align: center;
+}
+.cities-Towns section:nth-child(2) h2{
+    font-size: 32px;
+    color: #232223;
+}
+.cities-Towns section:nth-child(2) p{
+    font-size: 20px;
+    color: #585858;
+    width: 50%;
+    margin: 20px auto;
+}
+.cities-Towns section:nth-child(3){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.cities-Towns section:nth-child(3) aside{
+    position: relative;
+}
+.cities-Towns section:nth-child(3) article:first-child{
+    width: 55%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 25px 0px 0px 25px;
+}
+.cities-Towns section:nth-child(3) article:first-child img{
+    width: 100%;
+    height: 100%;
+}
+.cities-Towns section:nth-child(3) article:last-child{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -10%;
+    top: -220px;
+    border-radius: 25px;
+    height: 320px;
+    width: 300px;
+    font-family: 'myfont';
+}
+.cities-Towns section:nth-child(3) article:last-child h3{
+    display: flex;
+    font-size: 25px;
+}
+.cities-Towns section:nth-child(3) article:last-child h3 span{
+    display: flex;
+    color: #22b2c0;
+    padding-left: 40px;
+}
+/* .cities-Towns section:nth-child(3) article:last-child p{
+    display: flex;
+    font-size: 20px;
+}
+.cities-Towns section:nth-child(3) article:last-child p h5{
+    display: flex;
+
+} */
+.cities-Towns section:nth-child(4){
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    top: -100px;
+}
+.cities-Towns section:nth-child(4) button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #22b2c0;
+    color: #22b2c0;
+}
+.cities-Towns section:nth-child(4) button:hover{
+    transition: all 0.5s;
+    background-color: #22b2c0;
+    color: white;
+}
+/* ------------------------------------- */
+/* ------------------------------------- */
+div.country{
+    padding: 8% 10%;
+    background-color: #1d1c1d;
+    border-bottom: 2px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+div.country section{
+    font-family: 'myfont';
+}
+div.country section:first-child{
+    align-items: center;
+}
+div.country section:nth-child(2) h2{
+    color: #232223;
+    font-size: 32px;
+}
+div.country section:nth-child(2) p{
+    color: #585858;
+    padding: 10px 0px;
+    line-height: 25px;
+}
+div.country section:nth-child(2) a{
+    display: inline-block;
+    background-color: #22b2c0;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+div.country section:nth-child(2) div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+    margin: 20px 0px;
+    color: blue;
+}
+div.country section:nth-child(2) div aside{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+div.country section:nth-child(2) div aside:last-child{
+    grid-column: 1/3;
+}
+div.country section:nth-child(2) div aside p{
+    color: #22b2c0;
+}
+div.country section:nth-child(2) div aside section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+/* ------------------------------------- */
+/* ------------DEALS-------------------- */
+.deal1{
+    background-color: #1d1c1d;
+}
+.deal1>div{
+    background-color: #22b2c0;
+    width: 80%;
+    margin: auto;
+    border-radius: 0px 0px 25px 25px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 3% 5%;
+    color: white;
+    font-family: 'myfont';
+}
+.deal1>div div:nth-child(1){
+    font-size: 32px;
+}
+.deal1>div div:nth-child(2),.deal1>div div:nth-child(3){
+    flex-grow: 1;
+}
+.deal1>div div:nth-child(2)>ul>li,.deal1>div div:nth-child(3)>ul>li{
+    flex-grow: 1;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    list-style-type: none;
+}
+.deal1>div div:nth-child(2)>ul>li ol{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 38px;
+    left: 0px;
+    list-style-type: none;
+    background-color: #22b2c0;
+    border: 1px solid gray;
+}
+.deal1>div div:nth-child(2)>ul>li:hover ol{
+    display: block;
+}
+.deal1>div div:nth-child(2)>ul>li ol li{
+    padding: 5px 10px;
+}
+.deal1>div div:nth-child(4) button{
+    padding: 10px 40px;
+    font-size: 20px;
+    color: white;
+    font-family: 'myfont';
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 25px;
+}
+.deal2{
+    background-color: #232223;
+    height: 140vh;
+    padding: 5% 8%;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.deal2 div{
+    background-color: white;
+    border-radius: 30px;
+}
+/* .deal2 div:nth-child(4){
+    grid-column: 2;
+    grid-row: 2/4;
+} */
+.deal2 div:nth-child(1) section{
+    display: flex;
+    grid-template-columns: 1fr;
+}
+.deal2 div:nth-child(1) section article img{
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+}
+.deal2 div:nth-child(1) section article aside{
+    position: relative;
+    padding: 10px;
+}
+.deal2 div:nth-child(1) section article aside pre{
+    font-size: 18px;
+    color: #22b2c0;
+    font-family: 'myfont';
+    padding: 10px;
+}
+.deal2 div:nth-child(1) section article  aside h2{
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
+.deal2 div:nth-child(1) section article aside section{
+    display: flex;
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    justify-content: space-around;
+    color: #777777;
+    font-size: 20px;
+    padding: 10px;
+}
+.deal2 div:nth-child(1) section article aside p{
+    color: #777777;
+    padding: 10px;
+    font-size: 22px;
+}
+.deal2 div:nth-child(1) section article aside aside a{
+    background-color: #22b2c0;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border-color: #22b2c0;
+    padding-left: 20px;
+    position: relative;
+}
+.deal2 div:nth-child(1) section article aside aside {
+    padding: 20px 50px;
+}
+.deal2 div:nth-child(1) section article aside aside a:hover{
+    background-color: white;
+    color: #22b2c0;
+    transition: all .5s;
+}
+/* ------------------------------------------------- */
+.deal2 div:nth-child(2) section{
+    display: flex;
+    grid-template-columns: 1fr;
+}
+.deal2 div:nth-child(2) section article img{
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+}
+.deal2 div:nth-child(2) section article aside{
+    position: relative;
+    padding: 5px;
+}
+.deal2 div:nth-child(2) section article aside pre{
+    font-size: 18px;
+    color: #22b2c0;
+    font-family: 'myfont';
+    padding: 10px;
+}
+.deal2 div:nth-child(2) section article  aside h2{
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
+.deal2 div:nth-child(2) section article aside section{
+    display: flex;
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    justify-content: space-around;
+    color: #777777;
+    font-size: 20px;
+    padding: 10px;
+}
+.deal2 div:nth-child(2) section article aside p{
+    color: #777777;
+    padding: 10px;
+    font-size: 22px;
+}
+.deal2 div:nth-child(2) section article aside aside a{
+    background-color: #22b2c0;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border-color: #22b2c0;
+    padding-left: 20px;
+    position: relative;
+}
+.deal2 div:nth-child(2) section article aside aside {
+    padding: 20px 50px;
+}
+.deal2 div:nth-child(2) section article aside aside a:hover{
+    background-color: white;
+    color: #22b2c0;
+    transition: all .5s;
+}
+/* ------------------------------------------------- */
+.deal2 div:nth-child(3) section{
+    display: flex;
+    grid-template-columns: 1fr;
+}
+.deal2 div:nth-child(3) section article img{
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+}
+.deal2 div:nth-child(3) section article aside{
+    position: relative;
+    padding: 5px;
+}
+.deal2 div:nth-child(3) section article aside pre{
+    font-size: 18px;
+    color: #22b2c0;
+    font-family: 'myfont';
+    padding: 10px;
+}
+.deal2 div:nth-child(3) section article  aside h2{
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
+.deal2 div:nth-child(3) section article aside section{
+    display: flex;
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    justify-content: space-around;
+    color: #777777;
+    font-size: 20px;
+    padding: 10px;
+}
+.deal2 div:nth-child(3) section article aside p{
+    color: #777777;
+    padding: 10px;
+    font-size: 22px;
+}
+.deal2 div:nth-child(3) section article aside aside a{
+    background-color: #22b2c0;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border-color: #22b2c0;
+    padding-left: 20px;
+    position: relative;
+}
+.deal2 div:nth-child(3) section article aside aside {
+    padding: 20px 50px;
+}
+.deal2 div:nth-child(3) section article aside aside a:hover{
+    background-color: white;
+    color: #22b2c0;
+    transition: all .5s;
+}
+/* ------------------------------------------------- */
+.deal2 div:nth-child(4) section{
+    display: flex;
+    grid-template-columns: 1fr;
+}
+.deal2 div:nth-child(4) section article img{
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+}
+.deal2 div:nth-child(4) section article aside{
+    position: relative;
+    padding: 5px;
+}
+.deal2 div:nth-child(4) section article aside pre{
+    font-size: 18px;
+    color: #22b2c0;
+    font-family: 'myfont';
+    padding: 10px;
+}
+.deal2 div:nth-child(4) section article  aside h2{
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
+.deal2 div:nth-child(4) section article aside section{
+    display: flex;
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    justify-content: space-around;
+    color: #777777;
+    font-size: 20px;
+    padding: 10px;
+}
+.deal2 div:nth-child(4) section article aside p{
+    color: #777777;
+    padding: 10px;
+    font-size: 22px;
+}
+.deal2 div:nth-child(4) section article aside aside a{
+    background-color: #22b2c0;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border-color: #22b2c0;
+    padding-left: 20px;
+    position: relative;
+    font-size: 20px;
+}
+.deal2 div:nth-child(4) section article aside aside {
+    padding: 20px 50px;
+}
+.deal2 div:nth-child(4) section article aside aside a:hover{
+    background-color: white;
+    color: #22b2c0;
+    transition: all .5s;
+}
+/* ------------------------------------------------- */
