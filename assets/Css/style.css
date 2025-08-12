@@ -192,8 +192,7 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
 .visit aside .box1 article:nth-child(3){
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px;
-    padding: 15px 0px;
+    padding: 0px 15px;
     border-bottom: 1px solid #585858;
 }
 .visit aside .box1 article:nth-child(1){
@@ -203,6 +202,22 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
 .visit aside .box1 article:nth-child(1) span{
     display: grid;
     color: #585858;
+}
+.visit aside .box1 article:nth-child(3) span{
+    display: grid;
+    justify-content: flex-start;
+}
+.visit aside .box1 article:nth-child(3) div{
+    font-size: 18px;
+    position: relative;
+    left: -130px;
+}
+.visit aside .box1 article:nth-child(3) div pre {
+    /* position: absolute;
+    left: 90px;
+    right: -800px;
+    top: -5px; */
+
 }
 .visit aside .box1 article:nth-child(1) a{
     background-color: #22b2c0;
