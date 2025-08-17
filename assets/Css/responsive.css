@@ -289,71 +289,210 @@
 }
 
 /* ------------------------------ */
-/* ========== ABOUT PAGE STYLING ========== */
-.about-header {
-  text-align: center;
-  margin: 60px 0 30px 0;
-}
-
-.about-header h2 {
-  font-size: 42px;
-  font-weight: 700;
-  color: #2a2a2a;
-  margin-bottom: 15px;
-}
-
-.about-header p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #555;
-}
-
-/* About Content Section */
-.about-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin: 60px auto;
-  max-width: 1100px;
-  gap: 40px;
-}
-
-.about-content .text {
-  flex: 1 1 50%;
-}
-
-.about-content .text h3 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  color: #222;
-}
-
-.about-content .text p {
-  font-size: 17px;
-  line-height: 1.6;
-  color: #666;
-}
-
-.about-content iframe {
-  flex: 1 1 40%;
-  min-height: 350px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* Box1 Fix (map below on mobile) */
+/* =======================
+   Mobile First Responsive
+   ======================= */
 @media (max-width: 768px) {
-  .about-content {
+
+  /* Background fix */
+  body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  /* Cities & Towns section */
+  .cities-Towns .part {
+    display: flex;
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .cities-Towns .part article {
+    width: 100%;
     text-align: center;
   }
 
-  .about-content iframe {
+  .cities-Towns .part article img {
     width: 100%;
-    margin-top: 20px;
+    height: auto;
+    border-radius: 10px;
   }
+
+  /* Weekly Offers - Cards */
+  .cities-Towns section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cities-Towns section:nth-of-type(3) aside {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .cities-Towns section:nth-of-type(3) aside article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Country section */
+  .country {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .country > section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .country img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  .foot-1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .foot-1 section button {
+    margin-top: 10px;
+  }
+}
+
+/* =======================
+   Tablet Responsive
+   ======================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* Cities in 2 columns */
+  .cities-Towns .part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Offers in 2 columns */
+  .cities-Towns section:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .cities-Towns section:nth-of-type(3) aside {
+    flex-direction: column;
+  }
+
+  /* Country section side by side */
+  .country {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .country > section {
+    width: 100%;
+  }
+}
+/* Default (desktop) → 4 columns */
+.cities-Towns .part {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Tablet (2 columns) */
+@media (max-width: 1024px) {
+  .cities-Towns .part {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (1 column) */
+@media (max-width: 768px) {
+  .cities-Towns .part {
+    grid-template-columns: 1fr;
+  }
+
+  .cities-Towns .part article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+/* =========================
+   CITIES & TOWNS SECTION
+   ========================= */
+.cities-Towns .part {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+/* Tablet and below → 1 column */
+@media (max-width: 1024px) {
+  .cities-Towns .part {
+    grid-template-columns: 1fr;
+  }
+
+  .cities-Towns .part article {
+    width: 100%;
+  }
+
+  .cities-Towns .part article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+/* =========================
+   CITIES & TOWNS SECTION
+   ========================= */
+.cities-Towns .part {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.cities-Towns .part article img {
+  width: 3000px;
+  height: 3000px;
+  border-radius: 5px;
+}
+/* Tablet & Mobile → show only first image, full width */
+@media (max-width: 1024px) {
+  .cities-Towns .part {
+    grid-template-columns: 1fr; /* one column */
+  }
+
+  .cities-Towns .part article {
+    display: none; /* hide all */
+  }
+
+  .cities-Towns .part article:first-child {
+    display: block; /* show only first image */
+    width: 100%; /* take full width */
+  }
+
+  .cities-Towns .part article:first-child {
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+  }
+  .cities-Towns section:first-child{
+    background-color: white;
+    border-radius: 25px;
+    position: relative;
+    top: -170px;
+    height: 500px;
+}
 }
