@@ -212,13 +212,12 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
     position: relative;
     left: -130px;
 }
-.visit aside .box1 article:nth-child(3) div pre {
+/* .visit aside .box1 article:nth-child(3) div pre { */
     /* position: absolute;
     left: 90px;
     right: -800px;
     top: -5px; */
-
-}
+/* } */
 .visit aside .box1 article:nth-child(1) a{
     background-color: #22b2c0;
     color: white;
@@ -795,3 +794,192 @@ div.country section:nth-child(2) div aside section{
     transition: all .5s;
 }
 /* ------------------------------------------------- */
+/* reservation */
+.slider{
+    background-image: url(/assets/Image/heading-bg-02.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 10px;
+    font-family: 'my-font';
+}
+section.slider h3{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    width: 400px;
+    margin: 0px auto;
+    font-weight: 400;
+    padding-top: 150px;
+}
+section.slider hr{
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    margin: 10px auto;
+}
+section.slider h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0px;
+}
+section.slider p{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 75%;
+    margin: 0px auto;
+}
+section.slider article{
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+section.slider a{
+    background-color: white;
+    color: #22b2c0;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+section.slider a:hover{
+    background-color: #22b2c0;
+    color: white;
+    transition: all .5s;
+}
+.reservation{
+    background-color: #232223;
+} 
+.reservation .contact{
+    position: relative;
+    top: -110px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+   
+}
+.reservation .contact article{
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    color: #22b2c0;
+    padding: 20px;
+    border-radius: 50px;
+    flex: 1;
+    margin: 0 10px;
+}
+.reservation .contact div span{
+    font-size: 30px;
+    color: #22b2c0;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    justify-content: center;
+}
+.reservation .contact article div{
+    padding-left: 100px;
+}
+.reservation .contact article h3{
+    font-size: 20px;
+    margin: 10px 0;
+    color: black;
+    padding-left: 80px;
+}
+.reservation .contact article p{
+    font-size: 20px;
+    padding-left: 9vh;
+    
+}
+.reservation .form{
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+}
+.reservation .form section{
+    flex: 1;
+    margin: 0 10px;
+    width: 100%;
+}
+.reservation .form section iframe{
+    width: 1350px;
+    height: 500px;
+    border: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.reservation .form .fill{
+    background-color: white;
+    padding: 20px;
+    width: 1350px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.reservation .form .fill h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+    width: 1350px;
+}
+.reservation .form .fill form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.reservation .form .fill form input,
+.reservation .form .fill form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.reservation .form .fill form button {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #22b2c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    width: 80%;
+}
+.reservation .form .fill form button:hover {
+    background-color: #15bec7;
+}
+.reservation .form .fill ul{
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+.reservation .form .fill ul li{
+    color: #e2dcdc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+}
+.reservation .form .fill ul li input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+.dropdown {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 1250px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    background-color: white;
+    margin: auto;
+}
