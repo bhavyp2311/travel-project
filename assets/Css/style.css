@@ -414,14 +414,42 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
     color: #22b2c0;
     padding-left: 40px;
 }
-/* .cities-Towns section:nth-child(3) article:last-child p{
+.cities-Towns section:nth-child(3) article:last-child p{
     display: flex;
-    font-size: 20px;
+    font-size: 15px;
+    width: 250px;
+    padding: 10px;
+    color: #585858;
 }
 .cities-Towns section:nth-child(3) article:last-child p h5{
+    color: #22b2c0;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.cities-Towns section:nth-child(3) article:last-child div a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #22b2c0;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    width: 150px;
+
+}
+.cities-Towns section:nth-child(3) article:last-child div{
+    padding-left: 30px;
+}
+.cities-Towns section:nth-child(3) article:last-child div a:hover{
+    background-color: darken(#22b2c0, 10%);
+    transform: translateY(-2px);
+
+}
+.cities-Towns section:nth-child(3) article:last-child div p h5{
     display: flex;
 
-} */
+}
 .cities-Towns section:nth-child(4){
     display: flex;
     justify-content: center;
@@ -498,6 +526,8 @@ div.country section:nth-child(2) div aside section{
     justify-content: space-between;
     padding: 0px 40px;
 }
+/* ---------------------------------- */
+
 /* ------------------------------------- */
 /* ------------DEALS-------------------- */
 .deal1{
