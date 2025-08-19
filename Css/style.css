@@ -414,14 +414,42 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
     color: #22b2c0;
     padding-left: 40px;
 }
-/* .cities-Towns section:nth-child(3) article:last-child p{
+.cities-Towns section:nth-child(3) article:last-child p{
     display: flex;
-    font-size: 20px;
+    font-size: 15px;
+    width: 250px;
+    padding: 10px;
+    color: #585858;
 }
 .cities-Towns section:nth-child(3) article:last-child p h5{
+    color: #22b2c0;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.cities-Towns section:nth-child(3) article:last-child div a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #22b2c0;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    width: 150px;
+
+}
+.cities-Towns section:nth-child(3) article:last-child div{
+    padding-left: 30px;
+}
+.cities-Towns section:nth-child(3) article:last-child div a:hover{
+    background-color: darken(#22b2c0, 10%);
+    transform: translateY(-2px);
+
+}
+.cities-Towns section:nth-child(3) article:last-child div p h5{
     display: flex;
 
-} */
+}
 .cities-Towns section:nth-child(4){
     display: flex;
     justify-content: center;
@@ -498,6 +526,8 @@ div.country section:nth-child(2) div aside section{
     justify-content: space-between;
     padding: 0px 40px;
 }
+/* ---------------------------------- */
+
 /* ------------------------------------- */
 /* ------------DEALS-------------------- */
 .deal1{
@@ -582,6 +612,7 @@ div.country section:nth-child(2) div aside section{
 .deal2 div:nth-child(1) section article img{
     border-radius: 20px 0px 0px 20px;
     height: 100%;
+    width: 250px;
 }
 .deal2 div:nth-child(1) section article aside{
     position: relative;
@@ -622,7 +653,7 @@ div.country section:nth-child(2) div aside section{
     position: relative;
 }
 .deal2 div:nth-child(1) section article aside aside {
-    padding: 20px 50px;
+    padding: 20px 20px;
 }
 .deal2 div:nth-child(1) section article aside aside a:hover{
     background-color: white;
@@ -677,7 +708,7 @@ div.country section:nth-child(2) div aside section{
     position: relative;
 }
 .deal2 div:nth-child(2) section article aside aside {
-    padding: 20px 50px;
+    padding: 20px 20px;
 }
 .deal2 div:nth-child(2) section article aside aside a:hover{
     background-color: white;
@@ -692,6 +723,7 @@ div.country section:nth-child(2) div aside section{
 .deal2 div:nth-child(3) section article img{
     border-radius: 20px 0px 0px 20px;
     height: 100%;
+    width: 250px;
 }
 .deal2 div:nth-child(3) section article aside{
     position: relative;
@@ -732,7 +764,7 @@ div.country section:nth-child(2) div aside section{
     position: relative;
 }
 .deal2 div:nth-child(3) section article aside aside {
-    padding: 20px 50px;
+    padding: 20px 20px;
 }
 .deal2 div:nth-child(3) section article aside aside a:hover{
     background-color: white;
@@ -747,6 +779,7 @@ div.country section:nth-child(2) div aside section{
 .deal2 div:nth-child(4) section article img{
     border-radius: 20px 0px 0px 20px;
     height: 100%;
+    width: 250px;
 }
 .deal2 div:nth-child(4) section article aside{
     position: relative;
@@ -788,7 +821,7 @@ div.country section:nth-child(2) div aside section{
     font-size: 20px;
 }
 .deal2 div:nth-child(4) section article aside aside {
-    padding: 20px 50px;
+    padding: 20px 20px;
 }
 .deal2 div:nth-child(4) section article aside aside a:hover{
     background-color: white;
@@ -908,7 +941,7 @@ section.slider a:hover{
     width: 100%;
 }
 .reservation .form section iframe{
-    width: 1350px;
+    width: 110%;
     height: 500px;
     border: none;
     border-top-left-radius: 30px;
@@ -917,15 +950,17 @@ section.slider a:hover{
 .reservation .form .fill{
     background-color: white;
     padding: 20px;
-    width: 1350px;
+    width: 110%;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    justify-content: center;
 }
 .reservation .form .fill h1{
     font-size: 24px;
     margin-bottom: 10px;
     color: black;
-    width: 1350px;
+    width: 110%;
+    align-items: center;
 }
 .reservation .form .fill form{
     display: grid;
@@ -971,17 +1006,26 @@ section.slider a:hover{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    width: 600px;
+    width: 250px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .dropdown {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    width: 1250px;
+    width: 100%;
     margin-bottom: 10px;
     padding-left: 30px;
     background-color: white;
     margin: auto;
+}
+.dropdown select {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 10px;
 }
