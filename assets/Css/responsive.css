@@ -575,364 +575,280 @@
   }
 }
 /* =======================Deals page ========================== */
-/* Responsive Fix for Deals Page */
-@media (max-width: 992px) {
-  .amazing-deals .container .row {
+@media (max-width: 768px) {
+  .deals {
+    padding: 20px 5%;
+  }
+
+  .deals h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .deals .deal-card {
     display: flex;
-    flex-direction: column;  /* stack cards vertically */
-    gap: 30px; /* spacing between cards */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
 
-  .amazing-deals .col-lg-5,
-  .amazing-deals .col-lg-7 {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  .amazing-deals img {
+  .deals .deal-card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 10px;
   }
 
-  .amazing-deals .content {
-    padding: 20px;
-    text-align: center;
-  }
-
-  .amazing-deals .main-button {
-    text-align: center;
-    margin-top: 15px;
-  }
-}
-
-/* Extra small devices */
-@media (max-width: 576px) {
-  .amazing-deals h4 {
+  .deals .deal-card h3 {
     font-size: 18px;
+    margin-bottom: 8px;
   }
 
-  .amazing-deals p {
+  .deals .deal-card p {
     font-size: 14px;
-  }
-
-  .amazing-deals .main-button a {
-    display: block;
-    padding: 12px 20px;
-    font-size: 14px;
+    color: #666;
   }
 }
-/* ===========================
-   Responsive Fix: Deals Page
-   =========================== */
-@media (max-width: 992px) {
-  .amazing-deals .row {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+/* === Deals Page Styling === */
 
-  .amazing-deals .col-lg-5,
-  .amazing-deals .col-lg-7 {
-    width: 100% !important;
-    max-width: 100% !important;
-    flex: none !important;
-  }
-
-  /* Image full width */
-  .amazing-deals img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-  }
-
-  /* Content below image */
-  .amazing-deals .content {
-    padding: 20px;
-    text-align: center;
-  }
-
-  /* Button center */
-  .amazing-deals .main-button {
-    text-align: center;
-    margin-top: 10px;
-  }
+/* Container for deals page */
+.deal1 {
+  margin-bottom: 30px;
 }
 
-/* Extra small devices */
-@media (max-width: 576px) {
-  .amazing-deals h4 {
-    font-size: 18px;
-  }
-
-  .amazing-deals p {
-    font-size: 14px;
-  }
-
-  .amazing-deals .main-button a {
-    display: block;
-    padding: 12px 20px;
-    font-size: 14px;
-  }
-}
-/* ====== FORCE: image on TOP, text below for .country on small screens ======
-   Put this block at the VERY END of responsive.css
-========================================================================== */
-@media (max-width: 768px) {
-  /* Kill transforms/positioning inherited from desktop rules */
-  .country, .country > section, .country img {
-    -webkit-transform: none !important;
-            transform: none !important;
-    left: auto !important;
-    top: auto !important;
-  }
-
-  /* Make container normal flow (not grid/flex/absolute) */
-  .country {
-    display: block !important;
-    width: 100% !important;
-    padding-left: 6% !important;
-    padding-right: 6% !important;
-    margin: 0 auto !important;
-  }
-
-  /* Ensure each section is full width and in document order */
-  .country > section {
-    position: static !important;
-    float: none !important;
-    clear: both !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-    min-height: 0 !important;
-  }
-
-  /* Guarantee image section is first and text second (DOM order respected) */
-  .country > section:first-child { grid-row: 1 !important; order: 0 !important; margin-bottom: 14px !important; }
-  .country > section:last-child  { grid-row: 2 !important; order: 1 !important; }
-
-  /* Force the image to behave (full width) */
-  .country img,
-  .country > section:first-child img {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    object-fit: cover !important;
-    border-radius: 12px !important;
-    transform: none !important;
-  }
-
-  /* Neutralize any absolutely positioned children inside the text section */
-  .country > section:last-child * {
-    position: static !important;
-    transform: none !important;
-    left: auto !important;
-    top: auto !important;
-  }
-
-  /* Optional: make text look centered and readable on phones */
-  .country > section:last-child {
-    text-align: center !important;
-    padding: 18px 4% !important;
-  }
-}
-/* ===== Deals Page Cards Layout ===== */
-.deals-section .row {
+/* Sort Section (desktop: row, mobile: column) */
+.deal1 .sort {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
   flex-wrap: wrap;
+}
+
+.deal1 .sort > div {
+  flex: 1;
+}
+
+/* Deals grid (cards) */
+.deal2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-.deals-section .col-lg-3,
-.deals-section .col-md-6 {
-  display: flex;
-}
-
-.deals-section .card {
-  flex: 1;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.deals-section .card:hover {
-  transform: translateY(-5px);
-}
-
-/* Desktop: 4 cards in a row */
-@media (min-width: 1200px) {
-  .deals-section .col-lg-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
+/* Tablet: 2 per row */
+@media (max-width: 992px) {
+  .deal2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Tablet: 2 cards per row */
-@media (max-width: 991px) {
-  .deals-section .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
+/* Mobile: stack sort + 1 card per row */
+@media (max-width: 768px) {
+  .deal1 .sort {
+    flex-direction: column; /* stack Sort options */
+    align-items: flex-start;
+    
   }
+
+  .deal1 .sort > div {
+    width: 100%;
+    margin-bottom: 10px; /* space between sort options */
+  }
+
+}
+/* Deals grid (cards) */
+.deal2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns by default (desktop/tablet) */
+  gap: 20px;
+  width: 100%;
 }
 
 /* Mobile: 1 card per row */
-@media (max-width: 576px) {
-  .deals-section .col-md-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
+@media (max-width: 768px) {
+  .deal2 {
+    grid-template-columns: 1fr;
   }
 }
-.deals-section .card img {
+/* Fix black section background */
+.deals {
+  background-color: #000;   /* black background */
   width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ddd;
-}
-/* ===============================
-   FORCE: 4-up cards on desktop → responsive grid
-   Strong overrides to match multiple markup variants
-   Put this at the VERY END of responsive.css
-   =============================== */
-
-:root {
-  --card-gap: 20px;
+  padding: 60px 20px;
+  display: block;
 }
 
-/* Target common container names used in your site */
-.deals-section .row,
-.amazing-deals .container .row,
-.cities-Towns .part,
-.deals-grid,
-.cards-row,
-.weekly-offers,
-.weekly-offers .items,
-.popular,
-.trending {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important; /* 4 cards in row on desktop */
-  gap: var(--card-gap) !important;
-  align-items: stretch !important;
-  width: 100% !important;
-  margin: 0 auto !important;
-  box-sizing: border-box !important;
+/* Grid for deals cards */
+.deal2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 cards on desktop */
+  gap: 30px;
+  width: 100%;
+  height: 100%;
 }
 
-/* Ensure children behave as independent cards */
-.deals-section .row > * ,
-.amazing-deals .container .row > * ,
-.cities-Towns .part > * ,
-.deals-grid > * ,
-.cards-row > * ,
-.weekly-offers .item,
-.popular > * ,
-.trending > * {
-  display: block !important;
-  width: 100% !important;
-  position: relative !important;
-  float: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
+/* Make Sort Deals By in its own row */
+.section-heading {
+  margin-bottom: 30px;
+
+  text-align: center;
 }
 
-/* Make images inside those cards behave */
-.deals-section img,
-.amazing-deals img,
-.cities-Towns img,
-.deals-grid img,
-.cards-row img,
-.weekly-offers img,
-.popular img,
-.trending img {
-  display: block !important;
-  width: 100% !important;
-  height: auto !important;
-  object-fit: cover !important;
-  border-radius: 10px !important;
-}
-
-/* Card appearance niceties */
-.deals-section .card,
-.deals-grid .card,
-.cards-row .card,
-.weekly-offers .item {
-  background: #fff !important;
-  border-radius: 10px !important;
-  box-shadow: 0 6px 18px rgba(0,0,0,.08) !important;
-  overflow: hidden !important;
-}
-
-/* ===== Breakpoints ===== */
-/* 3 columns on large laptops */
-@media (max-width: 1200px) {
-  .deals-section .row,
-  .amazing-deals .container .row,
-  .cities-Towns .part,
-  .deals-grid,
-  .cards-row,
-  .weekly-offers,
-  .popular,
-  .trending {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
-}
-
-/* 2 columns on tablets */
+/* Responsive adjustments */
 @media (max-width: 992px) {
-  .deals-section .row,
-  .amazing-deals .container .row,
-  .cities-Towns .part,
-  .deals-grid,
-  .cards-row,
-  .weekly-offers,
-  .popular,
-  .trending {
-    grid-template-columns: repeat(2, 1fr) !important;
+  .deal2 {
+    grid-template-columns: 1fr; /* stack cards in 1 column */
+  }
+  .section-heading {
+    text-align: center;
+  }
+}
+/* Deal card styles */
+/* ===============reservation page responsive ================== */
+/* Default: form fields side by side */
+.reservation .form .fill form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns */
+  gap: 15px;
+}
+
+/* Make inputs full width inside grid */
+.reservation .form .fill form input,
+.reservation .form .fill form textarea,
+.reservation .form .fill form button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Responsive fix for small screens */
+@media (max-width: 768px) {
+  /* Stack map & form */
+  .reservation .form {
+    flex-direction: column;
+    padding: 10px 5%;
   }
 
-  /* make sure multi-column Bootstrap .col-* skeletons don't fight */
-  .deals-section .col-lg-3,
-  .deals-section .col-md-6,
-  .amazing-deals .col-lg-3,
-  .amazing-deals .col-md-6 {
-    flex: none !important;
-    max-width: 100% !important;
+  .reservation .form .map {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+
+  }
+
+  .reservation .form .fill {
+    width: 100%;
+  }
+
+  /* Stack form fields into one column */
+  .reservation .form .fill form {
+    grid-template-columns: 1fr; /* single column */
+  }
+}
+/* Responsive adjustments for deal2 section */
+/* Contact section layout */
+.contact-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-box {
+  flex: 1;
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .contact-boxes {
+    flex-direction: column;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+}
+/* ====== FORCE: contact boxes stack to one column on small screens ======
+   Paste this at the VERY END of /assets/Css/responsive.css
+   Targets your HTML: <section class="contact"> <article>...</article> x3
+=========================================================================== */
+
+/* Ensure normal desktop behaviour (3 in a row) but normalize children */
+.reservation .contact,
+.contact {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 20px !important;
+    padding:50px;
+  align-items: stretch !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Make each contact box an independent flexible column */
+.reservation .contact article,
+.contact article {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;           /* prevents overflow from long text */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 22px !important;
+  background: #fff !important;
+  color: #000 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+  margin: 0 !important;
+}
+
+/* Icon, heading and paragraph inside each box — centred & spaced */
+.reservation .contact article > div,
+.contact article > div { margin-bottom: 12px !important; }
+.reservation .contact article h3,
+.contact article h3 { margin: 6px 0 8px !important; font-size: 18px !important; }
+.reservation .contact article p,
+.contact article p { margin: 0 !important; color: #555 !important; }
+
+/* ======== RESPONSIVE: stack into single column on small screens ======== */
+@media (max-width: 768px) {
+  .reservation .contact,
+  .contact {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+  }
+
+  .reservation .contact article,
+  .contact article {
     width: 100% !important;
+    flex: 1 1 100% !important;
+    min-width: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
+@media (max-width: 768px) {
+  .reservation .form .fill ul{
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 
-/* 1 column on small phones */
-@media (max-width: 576px) {
-  .deals-section .row,
-  .amazing-deals .container .row,
-  .cities-Towns .part,
-  .deals-grid,
-  .cards-row,
-  .weekly-offers,
-  .popular,
-  .trending {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* tighten gaps on small screens */
-  :root { --card-gap: 14px; }
 }
-
-/* Safety: cancel absolute positioning applied to inner elements */
-.deals-section .row *[style],
-.amazing-deals .container .row *[style],
-.cities-Towns .part *[style] {
-  position: static !important;
-  left: auto !important;
-  top: auto !important;
-  transform: none !important;
-}
-
-/* Small rule to avoid overflowing card content */
-.deals-section .row,
-.amazing-deals .container .row,
-.cities-Towns .part {
-  overflow: visible !important;
 }
