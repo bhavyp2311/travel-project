@@ -612,6 +612,7 @@ div.country section:nth-child(2) div aside section{
 .deal2 div:nth-child(1) section article img{
     border-radius: 20px 0px 0px 20px;
     height: 100%;
+    width: 250px;
 }
 .deal2 div:nth-child(1) section article aside{
     position: relative;
@@ -652,7 +653,7 @@ div.country section:nth-child(2) div aside section{
     position: relative;
 }
 .deal2 div:nth-child(1) section article aside aside {
-    padding: 20px 50px;
+    padding: 20px 20px;
 }
 .deal2 div:nth-child(1) section article aside aside a:hover{
     background-color: white;
@@ -707,7 +708,7 @@ div.country section:nth-child(2) div aside section{
     position: relative;
 }
 .deal2 div:nth-child(2) section article aside aside {
-    padding: 20px 50px;
+    padding: 20px 20px;
 }
 .deal2 div:nth-child(2) section article aside aside a:hover{
     background-color: white;
@@ -722,6 +723,7 @@ div.country section:nth-child(2) div aside section{
 .deal2 div:nth-child(3) section article img{
     border-radius: 20px 0px 0px 20px;
     height: 100%;
+    width: 250px;
 }
 .deal2 div:nth-child(3) section article aside{
     position: relative;
@@ -762,7 +764,7 @@ div.country section:nth-child(2) div aside section{
     position: relative;
 }
 .deal2 div:nth-child(3) section article aside aside {
-    padding: 20px 50px;
+    padding: 20px 20px;
 }
 .deal2 div:nth-child(3) section article aside aside a:hover{
     background-color: white;
@@ -777,6 +779,7 @@ div.country section:nth-child(2) div aside section{
 .deal2 div:nth-child(4) section article img{
     border-radius: 20px 0px 0px 20px;
     height: 100%;
+    width: 250px;
 }
 .deal2 div:nth-child(4) section article aside{
     position: relative;
@@ -818,7 +821,7 @@ div.country section:nth-child(2) div aside section{
     font-size: 20px;
 }
 .deal2 div:nth-child(4) section article aside aside {
-    padding: 20px 50px;
+    padding: 20px 20px;
 }
 .deal2 div:nth-child(4) section article aside aside a:hover{
     background-color: white;

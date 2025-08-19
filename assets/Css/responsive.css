@@ -574,4 +574,104 @@
     padding: 18px 4% !important;
   }
 }
+/* =======================Deals page ========================== */
+/* Responsive Fix for Deals Page */
+@media (max-width: 992px) {
+  .amazing-deals .container .row {
+    display: flex;
+    flex-direction: column;  /* stack cards vertically */
+    gap: 30px; /* spacing between cards */
+  }
 
+  .amazing-deals .col-lg-5,
+  .amazing-deals .col-lg-7 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .amazing-deals img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .amazing-deals .content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .amazing-deals .main-button {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .amazing-deals h4 {
+    font-size: 18px;
+  }
+
+  .amazing-deals p {
+    font-size: 14px;
+  }
+
+  .amazing-deals .main-button a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+/* ===========================
+   Responsive Fix: Deals Page
+   =========================== */
+@media (max-width: 992px) {
+  .amazing-deals .row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .amazing-deals .col-lg-5,
+  .amazing-deals .col-lg-7 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+
+  /* Image full width */
+  .amazing-deals img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* Content below image */
+  .amazing-deals .content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Button center */
+  .amazing-deals .main-button {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .amazing-deals h4 {
+    font-size: 18px;
+  }
+
+  .amazing-deals p {
+    font-size: 14px;
+  }
+
+  .amazing-deals .main-button a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
