@@ -463,8 +463,8 @@
 }
 
 .cities-Towns .part article img {
-  width: 3000px;
-  height: 3000px;
+  width: 80%;
+  height: 80%;
   border-radius: 5px;
 }
 /* Tablet & Mobile → show only first image, full width */
@@ -479,14 +479,14 @@
 
   .cities-Towns .part article:first-child {
     display: block; /* show only first image */
-    width: 100%; /* take full width */
+    width: 80%; /* take full width */
   }
 
   .cities-Towns .part article:first-child {
     padding: 10px;
-    height: 300px;
-    width: 400px;
-    overflow: hidden;
+    height: 80%;
+    width: 400%;
+
   }
   .cities-Towns section:first-child{
     background-color: white;
