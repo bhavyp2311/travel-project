@@ -675,3 +675,264 @@
     font-size: 14px;
   }
 }
+/* ====== FORCE: image on TOP, text below for .country on small screens ======
+   Put this block at the VERY END of responsive.css
+========================================================================== */
+@media (max-width: 768px) {
+  /* Kill transforms/positioning inherited from desktop rules */
+  .country, .country > section, .country img {
+    -webkit-transform: none !important;
+            transform: none !important;
+    left: auto !important;
+    top: auto !important;
+  }
+
+  /* Make container normal flow (not grid/flex/absolute) */
+  .country {
+    display: block !important;
+    width: 100% !important;
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+    margin: 0 auto !important;
+  }
+
+  /* Ensure each section is full width and in document order */
+  .country > section {
+    position: static !important;
+    float: none !important;
+    clear: both !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-height: 0 !important;
+  }
+
+  /* Guarantee image section is first and text second (DOM order respected) */
+  .country > section:first-child { grid-row: 1 !important; order: 0 !important; margin-bottom: 14px !important; }
+  .country > section:last-child  { grid-row: 2 !important; order: 1 !important; }
+
+  /* Force the image to behave (full width) */
+  .country img,
+  .country > section:first-child img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    transform: none !important;
+  }
+
+  /* Neutralize any absolutely positioned children inside the text section */
+  .country > section:last-child * {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+  }
+
+  /* Optional: make text look centered and readable on phones */
+  .country > section:last-child {
+    text-align: center !important;
+    padding: 18px 4% !important;
+  }
+}
+/* ===== Deals Page Cards Layout ===== */
+.deals-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.deals-section .col-lg-3,
+.deals-section .col-md-6 {
+  display: flex;
+}
+
+.deals-section .card {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.deals-section .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Desktop: 4 cards in a row */
+@media (min-width: 1200px) {
+  .deals-section .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+/* Tablet: 2 cards per row */
+@media (max-width: 991px) {
+  .deals-section .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Mobile: 1 card per row */
+@media (max-width: 576px) {
+  .deals-section .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.deals-section .card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+/* ===============================
+   FORCE: 4-up cards on desktop → responsive grid
+   Strong overrides to match multiple markup variants
+   Put this at the VERY END of responsive.css
+   =============================== */
+
+:root {
+  --card-gap: 20px;
+}
+
+/* Target common container names used in your site */
+.deals-section .row,
+.amazing-deals .container .row,
+.cities-Towns .part,
+.deals-grid,
+.cards-row,
+.weekly-offers,
+.weekly-offers .items,
+.popular,
+.trending {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important; /* 4 cards in row on desktop */
+  gap: var(--card-gap) !important;
+  align-items: stretch !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+}
+
+/* Ensure children behave as independent cards */
+.deals-section .row > * ,
+.amazing-deals .container .row > * ,
+.cities-Towns .part > * ,
+.deals-grid > * ,
+.cards-row > * ,
+.weekly-offers .item,
+.popular > * ,
+.trending > * {
+  display: block !important;
+  width: 100% !important;
+  position: relative !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Make images inside those cards behave */
+.deals-section img,
+.amazing-deals img,
+.cities-Towns img,
+.deals-grid img,
+.cards-row img,
+.weekly-offers img,
+.popular img,
+.trending img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  border-radius: 10px !important;
+}
+
+/* Card appearance niceties */
+.deals-section .card,
+.deals-grid .card,
+.cards-row .card,
+.weekly-offers .item {
+  background: #fff !important;
+  border-radius: 10px !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08) !important;
+  overflow: hidden !important;
+}
+
+/* ===== Breakpoints ===== */
+/* 3 columns on large laptops */
+@media (max-width: 1200px) {
+  .deals-section .row,
+  .amazing-deals .container .row,
+  .cities-Towns .part,
+  .deals-grid,
+  .cards-row,
+  .weekly-offers,
+  .popular,
+  .trending {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* 2 columns on tablets */
+@media (max-width: 992px) {
+  .deals-section .row,
+  .amazing-deals .container .row,
+  .cities-Towns .part,
+  .deals-grid,
+  .cards-row,
+  .weekly-offers,
+  .popular,
+  .trending {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* make sure multi-column Bootstrap .col-* skeletons don't fight */
+  .deals-section .col-lg-3,
+  .deals-section .col-md-6,
+  .amazing-deals .col-lg-3,
+  .amazing-deals .col-md-6 {
+    flex: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+/* 1 column on small phones */
+@media (max-width: 576px) {
+  .deals-section .row,
+  .amazing-deals .container .row,
+  .cities-Towns .part,
+  .deals-grid,
+  .cards-row,
+  .weekly-offers,
+  .popular,
+  .trending {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* tighten gaps on small screens */
+  :root { --card-gap: 14px; }
+}
+
+/* Safety: cancel absolute positioning applied to inner elements */
+.deals-section .row *[style],
+.amazing-deals .container .row *[style],
+.cities-Towns .part *[style] {
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  transform: none !important;
+}
+
+/* Small rule to avoid overflowing card content */
+.deals-section .row,
+.amazing-deals .container .row,
+.cities-Towns .part {
+  overflow: visible !important;
+}
