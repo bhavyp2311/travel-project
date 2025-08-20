@@ -6,8 +6,8 @@
 }
 @font-face{
     font-family: 'myfont';
-    /* src: url('/assets/Fonts/EduSAHand-VariableFont_wght.ttf'); */
-    src: url('/assets/Fonts/PlayfairDisplay-VariableFont_wght.ttf');    
+    /* src: url('assets/Fonts/EduSAHand-VariableFont_wght.ttf'); */
+    src: url('assets/Fonts/PlayfairDisplay-VariableFont_wght.ttf');    
 }
 /* navbar */
 header{
@@ -52,7 +52,7 @@ section.slider article {
     justify-content: space-between;
 }
 section.slider article:first-child{
-    background-image: url('/assets/Image/banner-01.jpg');
+    background-image: url('assets/Image/banner-01.jpg');
     height: inherit;
     background-size: cover;
     text-align: center;
@@ -234,7 +234,7 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
 /* footer */
 .foot-1{
     background-color: #14d6e771;
-    background-image: url('/assets/Image/banner-01.jpg');
+    background-image: url('assets/Image/banner-01.jpg');
     background-repeat: no-repeat;
     background-blend-mode: color;
     background-position: 0% 65%;
@@ -831,7 +831,7 @@ div.country section:nth-child(2) div aside section{
 /* ------------------------------------------------- */
 /* reservation */
 .slider{
-    background-image: url(/assets/Image/heading-bg-02.jpg);
+    background-image: url(assets/Image/heading-bg-02.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
