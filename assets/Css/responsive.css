@@ -576,6 +576,12 @@
     flex-direction: column;
     gap: 20px;
   }
+  div.country section:nth-child(2) div aside{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
 }
 /* =========================
    FORCE: Image on TOP, Text below (mobile)

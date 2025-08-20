@@ -153,6 +153,8 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
 .visit main:first-child h2{
     color: #1d1c1d;
     font-size: 30px;
+    
+
 }
 .visit main:first-child p{
     color: #585858;
@@ -323,6 +325,7 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
 .cities-Towns{
     padding: 8% 10%;
     background-color: #1d1c1d;
+    width: 100%;
     font-family: 'myfont';
 }
 .cities-Towns section:first-child{
@@ -402,29 +405,33 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
     top: -220px;
     border-radius: 25px;
     height: 320px;
-    width: 300px;
+    width: 100%;
     font-family: 'myfont';
 }
 .cities-Towns section:nth-child(3) article:last-child h3{
     display: flex;
     font-size: 25px;
+    width: 80%;
 }
 .cities-Towns section:nth-child(3) article:last-child h3 span{
     display: flex;
     color: #22b2c0;
     padding-left: 40px;
+    width: 80%;
 }
 .cities-Towns section:nth-child(3) article:last-child p{
     display: flex;
     font-size: 15px;
-    width: 250px;
+    width: 80%;
     padding: 10px;
     color: #585858;
+
 }
 .cities-Towns section:nth-child(3) article:last-child p h5{
     color: #22b2c0;
     font-size: 20px;
     padding-left: 10px;
+    width: 80%;
 }
 .cities-Towns section:nth-child(3) article:last-child div a{
     display: flex;
@@ -435,7 +442,7 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
     color: white;
     border-radius: 15px;
     text-decoration: none;
-    width: 150px;
+    width: 100%;
 
 }
 .cities-Towns section:nth-child(3) article:last-child div{
@@ -478,6 +485,7 @@ div.country{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    width: 100%;
 }
 div.country section{
     font-family: 'myfont';
