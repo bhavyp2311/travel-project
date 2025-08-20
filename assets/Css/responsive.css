@@ -582,6 +582,30 @@
     border-radius: 5px;
     width: 100%;
 }
+div.country{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    padding: 20px 5%;
+}
+div.country section:nth-child(2) div{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+div.country section:nth-child(2) div aside:last-child{
+    width: 100%;
+}
+div.country section img{
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+  div.country section:nth-child(2) div aside p{
+    color: #22b2c0;
+    font-size: 16px;
+    width: 100%;
+}
 }
 /* =========================
    FORCE: Image on TOP, Text below (mobile)
@@ -727,7 +751,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns by default (desktop/tablet) */
   gap: 20px;
-  width: 100%;
+  width: 80%;
 }
 
 /* Mobile: 1 card per row */
@@ -767,6 +791,9 @@
   }
   .section-heading {
     text-align: center;
+  }
+  .deal2 img{
+    width: 100%;
   }
 }
 /* Deal card styles */
@@ -874,6 +901,7 @@
   border-radius: 10px !important;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
   margin: 0 !important;
+  width: 100% !important; /* ensure full width in flex */
 }
 
 /* Icon, heading and paragraph inside each box — centred & spaced */
@@ -895,10 +923,14 @@
 
   .reservation .contact article,
   .contact article {
-    width: 100% !important;
+    width: 80% !important;
     flex: 1 1 100% !important;
     min-width: 0 !important;
     margin-bottom: 0 !important;
+
+  }
+  .reservation .form .fill form button {
+    width: 30%;
   }
 }
 @media (max-width: 768px) {
