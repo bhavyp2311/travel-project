@@ -345,11 +345,16 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    padding: 20px 5%;
   }
 
   .country > section {
     width: 100%;
     text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
   }
 
   .country img {
@@ -361,9 +366,11 @@
   .foot-1 {
     flex-direction: column;
     text-align: center;
+    width: 100%;
   }
   .foot-1 section button {
     margin-top: 10px;
+    width: 100%;
   }
 }
 
@@ -377,6 +384,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    width: 100%;
   }
 
   /* Offers in 2 columns */
@@ -384,16 +392,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    width: 100%;
   }
 
   .cities-Towns section:nth-of-type(3) aside {
     flex-direction: column;
+    width: 100%;
   }
 
   /* Country section side by side */
   .country {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    width: 100%;
   }
 
   .country > section {
@@ -405,12 +417,15 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  text-align: center;
+  width: 100%;
 }
 
 /* Tablet (2 columns) */
 @media (max-width: 1024px) {
   .cities-Towns .part {
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
 }
 
@@ -418,12 +433,14 @@
 @media (max-width: 768px) {
   .cities-Towns .part {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .cities-Towns .part article img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    width: 100% ;
   }
 }
 /* =========================
@@ -521,6 +538,43 @@
     width: 100%;
     height: auto;
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .about-main{
+    width: 100%;
+    padding: 20px 5%;
+    height: 50%; /* let it adjust to content */
+  }
+  .blur{
+    filter: blur(8px) brightness(80%);
+    width: 100%;
+    height: 80%;
+    background-color: rgba(152, 148, 148, 0.641);
+}
+  .about-main h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .about-main p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  .about-main img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .about-main .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 /* =========================
