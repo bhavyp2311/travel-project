@@ -1,0 +1,8 @@
+{
+    "git.confirmSync": false,
+"git.autofetch": true,
+"explorer.excludeGitIgnore": true,
+"git.allowForcePush": true,
+"git.blame.editorDecoration.enabled": true
+
+}
