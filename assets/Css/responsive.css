@@ -649,7 +649,7 @@
   .deal2 div section article img {
     width: 100%;
     height: auto;
-    border-radius: 20px 20px 0 0;
+    border-radius: 30px;
   }
 
   .deal2 div section article aside {
@@ -717,5 +717,5 @@ html, body {
 .deal2 div section article img {
   width: 100% !important;
   height: auto !important;
-  border-radius: 20px 20px 0 0;
+  border-radius: 120px;
 }
