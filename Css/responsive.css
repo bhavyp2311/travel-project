@@ -5,6 +5,7 @@
     src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf');
 }
 /* ===========header=============*/
+/* Base mobile nav */
 @media (max-width: 992px){
   header {
     padding: 14px 6%;
@@ -46,6 +47,56 @@
     font-family: 'myfont';    
   }
 }
+@media (max-width: 992px) {
+  header {
+    padding: 14px 6%;
+    z-index: 999;
+  }
+
+  header .menu {
+    position: relative;
+  }
+
+  /* Hide menu list by default */
+  header .menu > ul {
+    display: none;
+    flex-direction: column;
+    background: #22b3c1;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+
+  /* Toggle button */
+  header .menu label {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: block;
+  }
+
+  /* Checkbox hidden */
+  #nav-toggle {
+    display: none;
+  }
+
+  /* Show menu when checked */
+  #nav-toggle:checked ~ ul {
+    display: flex;
+  }
+
+  /* Style list items */
+  header .menu > ul > li {
+    margin: 8px 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'myfont';
+  }
+}
+
 /* ===========end of header=============*/
 /* ===========footer=========== */
 @media (max-width: 992px) {
