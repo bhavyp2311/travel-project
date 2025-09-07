@@ -575,12 +575,13 @@ div.country section:nth-child(2) div aside section{
 }
 .btn{
     color: #22b2c0;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
 }
 .btn:hover{
     color: white;
     background-color: #22b2c0;
+    transition: 0.5 ease-in-out;
 }
 .deal1>div div:nth-child(1){
     font-size: 32px;
