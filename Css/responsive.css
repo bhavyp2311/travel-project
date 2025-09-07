@@ -1,0 +1,670 @@
+/* ==================responsive.css================= */
+@font-face{
+    font-family: 'myfont';
+    /* src: url('/assets/fonts/EduSAHand-VariableFont_wght.ttf'); */
+    src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+/* ===========header=============*/
+@media (max-width: 992px){
+  header {
+    padding: 14px 6%;
+    z-index: 999;
+  }
+  header .menu {
+    position: relative;
+  }
+  header .menu>ul{
+    display: none;
+    content: "menu";
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+  }
+  header .menu::before{
+    content: "☰ Menu";
+    font-size: 20px;
+    color: white;
+    border-radius: 10px solid white;
+  }
+  header .menu:hover>ul{
+    display: flex;
+    background: #22b3c1;
+    width: 250%;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 40px;
+    right: 0px;
+  }
+  header .menu>ul>li{
+    margin: 10px 10px;
+    /* padding: 10px 10px; */
+    width: 100%;
+    transition: 0.3s;
+    font-size: 18px;
+    font-family: 'myfont';    
+  }
+}
+/* ===========end of header=============*/
+/* ===========footer=========== */
+@media (max-width: 992px) {
+  .foot-1 {
+    display: grid;
+    flex-direction: column ;
+    text-align: center ;
+    gap: 20px ;
+    padding: 50px 6% ;
+  }
+
+  .foot-1 h2 {
+    font-size: 34px ;
+  }
+  .foot-1 h3 {
+    font-size: 18px ;
+  }
+
+  .foot-1 button {
+    width: 100%;
+    max-width: 360px;
+  }
+  .foot-1 {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .foot-1 section button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .foot-1 {
+    padding: 40px 5% ;
+  }
+  .foot-1 h2 {
+    font-size: 28px ;
+  }
+  .foot-1 h3 {
+    font-size: 16px ;
+  }
+  .foot-1 button {
+    padding: 14px 18px ;
+    font-size: 16px ;
+  }
+
+  .foot-2 {
+    padding: 20px ;
+    font-size: 16px ;
+  }
+}
+
+/*=======end of foooter=======================*/
+/* ============reservation page responsive !!! ================= */
+@media (max-width: 1024px) {
+    .slider {
+        height: auto;
+        padding: 60px 20px;
+    }
+    section.slider h1 {
+        font-size: 40px;
+    }
+    section.slider h3 {
+        font-size: 22px;
+        padding-top: 100px;
+    }
+    section.slider p {
+        font-size: 14px;
+        width: 90%;
+    }
+    section.slider a {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .reservation {
+        padding: 10%;
+        padding-left: 5%;
+    }
+
+    .reservation .contact {
+        grid-template-columns: 1fr 1fr;
+        padding-left: 5%;
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .reservation .contact article {
+        height: auto;
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .reservation .form {
+        width: 100%;
+    }
+    .reservation .form section iframe {
+        width: 100%;
+        height: 400px;
+    }
+    .reservation .form .fill {
+        width: 100%;
+    }
+}
+
+/* Mobiles (<=768px) */
+@media (max-width: 768px) {
+    .slider {
+        height: auto;
+        padding: 40px 15px;
+    }
+    section.slider h1 {
+        font-size: 28px;
+    }
+    section.slider h3 {
+        font-size: 18px;
+        padding-top: 60px;
+    }
+    section.slider p {
+        font-size: 13px;
+        width: 95%;
+    }
+    section.slider a {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+
+    .reservation {
+        padding: 40px 15px;
+    }
+
+    .reservation .contact {
+        grid-template-columns: 1fr;
+        top: -60px;
+        padding-left: 0;
+        gap: 15px;
+    }
+
+    .reservation .contact article {
+        font-size: 22px;
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .reservation .contact article h3 {
+        font-size: 16px;
+    }
+    .reservation .contact article p {
+        font-size: 14px;
+    }
+
+    .reservation .form section iframe {
+        height: 300px;
+    }
+    .reservation .form .fill {
+        padding: 15px;
+    }
+    .reservation .form .fill h1 {
+        font-size: 20px;
+    }
+    .reservation .form .fill ul {
+       display: flex;
+       flex-direction: column;
+    }
+    .reservation .form .fill form ul li {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .reservation .form .fill form ul li button {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .dropdown {
+        padding-left: 10px;
+    }
+}
+@media (max-width: 480px) {
+    section.slider h1 {
+        font-size: 22px;
+    }
+    section.slider h3 {
+        font-size: 16px;
+    }
+    section.slider p {
+        font-size: 12px;
+    }
+    .reservation .form .fill ul {
+       display: flex;
+       flex-direction: column;
+    }
+    .reservation .contact article {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .reservation .contact article h3 {
+        font-size: 14px;
+    }
+    .reservation .contact article p {
+        font-size: 12px;
+    }
+
+    .reservation .form .fill h1 {
+        font-size: 18px;
+    }
+    .reservation .form .fill form ul {
+        gap: 10px;
+    }
+}
+/* ===========end of reservation responsive ========= */
+
+/* ============home page responsive code !!!=========== */
+
+@media (max-width: 992px) {
+  .visit {
+    padding: 6%;
+  }
+  .visit main:first-child {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .visit main:last-child {
+    grid-template-columns: 1fr; /* stack all in one column */
+  }
+  .visit aside .box1 {
+    grid-template-columns: 1fr; /* image on top, content below */
+    text-align: center;
+  }
+  .visit aside .box1 section:nth-child(2) {
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+      section.slider {
+    height: auto;
+  }
+  section.slider article {
+    padding: 40px 20px;
+  }
+  section.slider article aside:first-child p {
+    font-size: 18px;
+  }
+  section.slider article aside:first-child h2 {
+    font-size: 32px;
+  }
+  section.slider article aside:nth-child(2) {
+    grid-template-columns: 1fr 1fr; /* reduce 4 → 2 columns */
+    border-radius: 40px;
+    padding: 20px;
+    gap: 20px;
+  }
+  .visit aside .box1 article:nth-child(1) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .visit aside .box1 article:nth-child(3) {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  section.slider article aside:first-child h2 {
+    font-size: 24px;
+  }
+
+  section.slider article aside:first-child a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  section.slider article aside:nth-child(2) {
+    grid-template-columns: 1fr; /* stack all in one column */
+  }
+
+  .visit {
+    padding: 30px 15px;
+  }
+
+  .visit aside .box1 {
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .visit aside .box1 article:nth-child(2),
+  .visit aside .box1 article:nth-child(3),
+  .visit aside .box1 section:nth-child(4) {
+    font-size: 14px;
+  }
+
+  iframe {
+    height: 300px !important;
+  }
+
+  footer .foot-1 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  footer .foot-1 h2 {
+    font-size: 22px;
+  }
+
+  footer .foot-1 h3 {
+    font-size: 16px;
+  }
+
+  footer .foot-1 button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+/* =================about page responsive !!! ============== */
+/* ================= about page responsive ============== */
+@media (max-width: 992px) {
+  /* About */
+  .about-main {
+    height: auto;
+    margin: 20% auto;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .about-content {
+    padding: 10% 5%;
+  }
+  .about-content h2 {
+    font-size: 28px;
+  }
+  .about-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .blur {
+    height: 300px;
+  }
+
+  /* Cities & Towns */
+  .cities-Towns section:first-child {
+    top: -150px;
+  }
+  .cities-Towns section:first-child div.part {
+    grid-template-columns: 1fr 1fr; /* 4 → 2 */
+    position: relative;
+    top: 0;
+  }
+
+  .cities-Towns section:nth-child(3) {
+    grid-template-columns: 1fr; /* 3 → 1 stack */
+  }
+  .cities-Towns section:nth-child(3) aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cities-Towns section:nth-child(3) article:first-child {
+    position: relative;
+    width: 60%;
+    height: 70%;
+    left: -50px;
+    height: auto;
+    border-radius: 20px;
+  }
+  .cities-Towns section:nth-child(3) article:last-child {
+    width: 80%;
+    right: 0;
+    left: 10%;
+    top: -40%;
+    height: 100%;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  /* Country */
+  div.country {
+    grid-template-columns: 1fr; /* 2 → 1 */
+    gap: 30px;
+    padding: 10% 6%;
+  }
+  div.country section:nth-child(2) h2 {
+    font-size: 26px;
+  }
+  div.country section:nth-child(2) p {
+    font-size: 16px;
+  }
+
+  /* Reservation Contact Cards */
+  .reservation .contact {
+    display: grid;
+    grid-template-columns: 1fr;  
+    position: static;            
+    top: auto;                   
+    width: 100%;
+    padding: 0 20px;             
+    justify-items: center;       
+  }
+
+  .reservation .contact article {
+    margin: 20px 0;               
+    max-width: 400px;             
+    width: 100%;                  
+  }
+}
+
+/* Mobiles (<= 768px) */
+@media (max-width: 768px) {
+  /* About */
+  .about-content h2 {
+    font-size: 24px;
+  }
+  .about-content a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  /* Cities & Towns */
+  .cities-Towns section:first-child {
+    padding: 30px 20px;
+    top: -60px;
+  }
+  .cities-Towns section:first-child h2 {
+    font-size: 26px;
+  }
+  .cities-Towns section:first-child div.part {
+    grid-template-columns: 1fr; /* 2 → 1 */
+  }
+  .cities-Towns section:nth-child(2) p {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  /* Offers cards */
+  .cities-Towns section:nth-child(3) article:last-child {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .cities-Towns section:nth-child(3) article:last-child h3 {
+    font-size: 20px;
+  }
+  .cities-Towns section:nth-child(3) article:last-child div a {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* Country */
+  div.country section:nth-child(2) div {
+    grid-template-columns: 1fr; /* stats stack */
+  }
+  div.country section:nth-child(2) div aside:last-child {
+    grid-column: auto;
+  }
+}
+
+/* Small Mobiles (<= 576px) */
+@media (max-width: 576px) {
+  /* About */
+  .about-main {
+    margin: 30% auto;
+    padding: 20px;
+  }
+  .about-content {
+    gap: 20px;
+  }
+  .about-content h2 {
+    font-size: 20px;
+  }
+  .about-content p {
+    font-size: 14px;
+  }
+  .about-content a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  /* Cities & Towns */
+  .cities-Towns section:first-child {
+    top: -40px;
+  }
+  .cities-Towns section:first-child h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .cities-Towns section:nth-child(2) h2 {
+    font-size: 22px;
+  }
+  .cities-Towns section:nth-child(2) p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .cities-Towns section:nth-child(3) article:last-child {
+    font-size: 12px;
+  }
+  .cities-Towns section:nth-child(3) article:last-child h3 {
+    font-size: 18px;
+  }
+  .cities-Towns section:nth-child(3) article:last-child p {
+    font-size: 12px;
+  }
+
+  /* Country */
+  div.country {
+    padding: 12% 5%;
+  }
+  div.country section:nth-child(2) h2 {
+    font-size: 20px;
+  }
+  div.country section:nth-child(2) p {
+    font-size: 14px;
+  }
+  div.country section:nth-child(2) a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .cities-Towns section:nth-child(4) button{
+    display: none;
+  }
+}
+/* ============deals page responsive !!============= */
+/* ---------------- Responsive for Deals ---------------- */
+
+/* Tablet and below */
+@media (max-width: 992px) {
+  .deal1 > div {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .deal1 > div div:nth-child(1) {
+    font-size: 24px;
+  }
+
+  .deal1 > div div:nth-child(2) ul li,
+  .deal1 > div div:nth-child(3) ul li {
+    font-size: 18px;
+  }
+
+  .deal2 {
+    grid-template-columns: 1fr; /* cards stacked */
+    height: auto; /* remove fixed height */
+  }
+
+  .deal2 div section {
+    flex-direction: column; /* image above text */
+  }
+
+  .deal2 div section article img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .deal2 div section article aside {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .deal2 div section article aside section {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .deal1 > div {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .deal1 > div div:nth-child(1) {
+    font-size: 20px;
+  }
+
+  .deal2 {
+    padding: 20px 5%;
+    gap: 20px;
+  }
+
+  .deal2 div section article aside pre {
+    font-size: 14px;
+  }
+
+  .deal2 div section article aside h2 {
+    font-size: 20px;
+  }
+
+  .deal2 div section article aside p {
+    font-size: 16px;
+  }
+
+  .deal2 div section article aside aside a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 576px) {
+  .deal1 > div {
+    width: 100% !important;
+    padding: 15px !important;
+  }
+}
+html, body {
+  overflow-x: hidden;
+}
+
+/* Fix container width */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix images overflowing */
+.deal2 div section article img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 20px 20px 0 0;
+}
