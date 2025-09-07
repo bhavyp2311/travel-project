@@ -2,7 +2,7 @@
 @font-face{
     font-family: 'myfont';
     /* src: url('/assets/fonts/EduSAHand-VariableFont_wght.ttf'); */
-    src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf');
+    src: url('assets/fonts/PlayfairDisplay-VariableFont_wght.ttf');
 }
 /* ===========header=============*/
 /* Base mobile nav */
