@@ -6,8 +6,8 @@
 }
 @font-face{
     font-family: 'myfont';
-    /* src: url('assets/Fonts/EduSAHand-VariableFont_wght.ttf'); */
-    src: url('assets/Fonts/PlayfairDisplay-VariableFont_wght.ttf');    
+    /* src: url('/assets/fonts/EduSAHand-VariableFont_wght.ttf'); */
+    src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf');
 }
 /* navbar */
 header{
@@ -408,11 +408,12 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
     flex-direction: column;
     position: relative;
     right: -10%;
-    top: -220px;
+    top: -210px;
     border-radius: 25px;
     height: 320px;
-    width: 100%;
+    width: 80%;
     font-family: 'myfont';
+    font-size: 10px;
 }
 .cities-Towns section:nth-child(3) article:last-child h3{
     display: flex;
@@ -448,7 +449,7 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
     color: white;
     border-radius: 15px;
     text-decoration: none;
-    width: 100%;
+    width: 70%;
 
 }
 .cities-Towns section:nth-child(3) article:last-child div{
@@ -571,6 +572,15 @@ div.country section:nth-child(2) div aside section{
     padding: 3% 5%;
     color: white;
     font-family: 'myfont';
+}
+.btn{
+    color: #22b2c0;
+    padding: 10px;
+    background-color: white;
+}
+.btn:hover{
+    color: white;
+    background-color: #22b2c0;
 }
 .deal1>div div:nth-child(1){
     font-size: 32px;
@@ -921,28 +931,39 @@ section.slider a:hover{
 }
 .reservation{
     background-color: #232223;
-    padding: 50px 10%;
+    padding: 15%;
+    justify-content: center;
+    padding-left: 5%;
 } 
 .reservation .contact{
     position: relative;
     top: -110px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
-    padding: 20px;
+    gap: 20px;
+    padding: 10px;
    width: 100%;
     margin: auto;
+    align-items: center;
+    padding-left: 15%;
+    font-size: 50px;
 }
 .reservation .contact article{
     background-color: white;
     height: 200px;
-    width: 80%;
+    width: 100%;
     color: #22b2c0;
     padding: 20px;
     border-radius: 50px;
-    /* flex: 1; */
-    margin: 10px 10px;
+    margin: 0 10px;
+    padding-left: 5%;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .reservation .contact div span{
     font-size: 30px;
@@ -951,11 +972,8 @@ section.slider a:hover{
     background-color: #f0f0f0;
     padding: 10px;
     justify-content: center;
-    align-items: center;
-    margin: 0;
 }
 .reservation .contact article div{
-    padding-left: 40%;
     align-items: center;
     justify-content: center;
 }
@@ -963,16 +981,13 @@ section.slider a:hover{
     font-size: 20px;
     margin: 10px 0;
     color: black;
-    padding-left: 15%;
     width: 80%;
     align-items: center;
     justify-content: center;
 }
 .reservation .contact article p{
-    font-size: 15px;
-    padding-left: 15%;
+    font-size: 20px;
     width: 80%;
-    
 }
 .reservation .form{
     justify-content: space-between;
@@ -980,7 +995,6 @@ section.slider a:hover{
     width: 80%;
 }
 .reservation .form section{
-    /* flex: 1; */
     margin: 0 0px;
     width: 100%;
 }
@@ -1015,8 +1029,7 @@ section.slider a:hover{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.reservation .form .fill form button {
-    /* grid-column: span 2; */
+.reservation .form .fill form ul li button {
     padding: 10px;
     background-color: #22b2c0;
     color: white;
@@ -1025,10 +1038,10 @@ section.slider a:hover{
     cursor: pointer;
     margin: auto;
     width: 100%;
-    font-size: 10px;
+    font-size: 20px;
     transition: background-color 0.3s ease;
 }
-.reservation .form .fill form button:hover {
+.reservation .form .fill form ul li button:hover {
     background-color: #15bec7;
 }
 .reservation .form .fill ul{
@@ -1037,7 +1050,6 @@ section.slider a:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-
 }
 .reservation .form .fill ul li{
     color: #e2dcdc;
@@ -1046,15 +1058,12 @@ section.slider a:hover{
     width: 100%;
 }
 .reservation .form .fill ul li input{
-    /* padding: 10px; */
     border: 1px solid #ccc;
     border-radius: 10px;
     width: 400%;
-    /* margin-bottom: 10px; */
     overflow: hidden;
 }
 .reservation .form .fill ul li input{
-    /* padding: 10px; */
     width: 100%;
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -1064,14 +1073,17 @@ section.slider a:hover{
 }
 .reservation .form .fill ul li:nth-child(2n){
     margin-bottom: 10px;
-    /* grid-column: 2/3; */
     width: 100%;
 }
 .reservation .form .fill ul li:nth-child(n){
     margin-bottom: 10px;
-    /* grid-column: 1/2; */
     width: 100%;
 
+}
+.reservation .form .fill ul li:nth-child(5){
+    margin-bottom: 10px;
+    grid-column: 1/3;
+    width: 100%;
 }
 .reservation .form .fill ul li:last-child{
     margin-bottom: 10px;
