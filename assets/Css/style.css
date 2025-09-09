@@ -460,14 +460,12 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
 }
 .cities-Towns section:nth-child(3) article:last-child div{
     padding-left: 30px;
-    
 }
 .cities-Towns section:nth-child(3) article:last-child div a:hover{
     /* background-color: darken(#22b2c0, 10%); */
     /* transform: translateY(-2px); */
     background-color: #349ba1;
     transition: 0.5s all;
-
 }
 .cities-Towns section:nth-child(3) article:last-child div p h5{
     display: flex;
