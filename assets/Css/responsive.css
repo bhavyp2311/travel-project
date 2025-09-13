@@ -5,7 +5,7 @@
     src: url('assets/fonts/PlayfairDisplay-VariableFont_wght.ttf');
 }
 /* ===========header=============*/
-/* Base mobile nav */
+
 @media (max-width: 992px){
   header {
     padding: 14px 6%;
@@ -191,8 +191,6 @@
         width: 100%;
     }
 }
-
-/* Mobiles (<=768px) */
 @media (max-width: 768px) {
     .slider {
         height: auto;
@@ -430,13 +428,13 @@
     top: -150px;
   }
   .cities-Towns section:first-child div.part {
-    grid-template-columns: 1fr 1fr; /* 4 → 2 */
+    grid-template-columns: 1fr 1fr; 
     position: relative;
     top: 0;
   }
 
   .cities-Towns section:nth-child(3) {
-    grid-template-columns: 1fr; /* 3 → 1 stack */
+    grid-template-columns: 1fr; 
   }
   .cities-Towns section:nth-child(3) aside {
     display: flex;
@@ -490,8 +488,6 @@
     width: 100%;                  
   }
 }
-
-/* Mobiles (<= 768px) */
 @media (max-width: 768px) {
   .about-content h2 {
     font-size: 24px;
