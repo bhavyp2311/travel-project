@@ -265,6 +265,7 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
 .foot-1 button:hover{
     background-color: white;
     color: #22b3c1;
+    transition: all 0.5s;
 }
 .foot-2{
     background-color: #22b3c1;
@@ -282,6 +283,7 @@ section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
 }
 .foot-2 a:hover{
     color: rgb(219, 219, 219);
+    /* transition: 0.5s ease-in-out; */
 }
 /* footer */
 /* ---------------ABOUT------------------ */
